@@ -38,7 +38,7 @@ boolean on=true;
 const int buzzerPin = 9; // Digital Pin 9
 const int butonPin = 4; // Digital Pin 4
 const int relayPin = 11; // Digital Pin 11
-String password="1234567#";
+String password="12345#";
 
 int stare_b=0;
 int c=0;

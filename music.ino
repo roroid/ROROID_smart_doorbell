@@ -29,7 +29,7 @@ void beep(int note, int duration)
 
 void melodie()
 {
-  /*beep(a, 500);
+  beep(a, 500);
   beep(a, 500);    
   beep(a, 500);
   beep(f, 350);
@@ -37,11 +37,11 @@ void melodie()
   beep(a, 500);
   beep(f, 350);
   beep(cH, 150);
-  beep(a, 650);*/
+  beep(a, 650);
 
   delay(500);
 
- /* beep(eH, 500);
+/*  beep(eH, 500);
   beep(eH, 500);
   beep(eH, 500);  
   beep(fH, 350);
@@ -51,6 +51,6 @@ void melodie()
   beep(cH, 150);
   beep(a, 650);*/
 
-  delay(500);
+ // delay(500);
   on=true;
 }

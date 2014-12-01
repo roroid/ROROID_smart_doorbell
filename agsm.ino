@@ -180,10 +180,9 @@ void printDebugLN(char* what){
 }
 
 void setAUDIOchannel(){
-  /*sendATcommand("AT+QAUDCH=2", "OK","ERROR",2);  //use audio channel(2-standard for a-gsm)
-  sendATcommand("AT+QMIC=2,14", "OK","ERROR",2); //set mic channel(2), mic gain
-  sendATcommand("AT+CLVL=25", "OK","ERROR",2);   //set output POWER! Do NOT exceed value of 25 if headset is used!
-*/
+  sendATcommand("AT+QAUDCH=2", "OK","ERROR",2);  //use audio channel(2-standard for a-gsm)
+  sendATcommand("AT+QMIC=2,50", "OK","ERROR",2); //set mic channel(2), mic gain
+  sendATcommand("AT+CLVL=50", "OK","ERROR",2);   //set output POWER! Do NOT exceed value of 25 if headset is used!
 }
 
 /*
@@ -557,7 +556,8 @@ if (callStatus==0){
 
 if (password==readFileBuffer){
   digitalWrite(relayPin,HIGH);
-  delay(15); 
+  delay(2000); 
+  digitalWrite(relayPin,LOW);  
 }
     //delay(5000);//wait a little bit
 
